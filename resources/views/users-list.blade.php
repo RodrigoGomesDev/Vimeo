@@ -84,7 +84,7 @@
 
 <div class="card-body register-card-body ">
 
-        <form method="post" action="http://teste.test/profile/edit" autocomplete="off" class="form-horizontal">
+        <form method="post" action="{{ route('profile.edit') }}" autocomplete="off" class="form-horizontal">
                 @csrf
                 @method('put')
 

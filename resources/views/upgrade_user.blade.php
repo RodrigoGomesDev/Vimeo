@@ -69,7 +69,7 @@
 
     <div class="row d-flex justify-content-between">
       <div class="col-4">
-        <a href="http://teste.test/home" class="btn btn-block {{ config('adminlte.classes_auth_btn', 'btn-flat btn-primary') }}" style="color: white">
+        <a href="{{ route('home') }}" class="btn btn-block {{ config('adminlte.classes_auth_btn', 'btn-flat btn-primary') }}" style="color: white">
             <span class="fas fa-sign-in-alt"></span>
             {{ __('Voltar') }}
         </a>
@@ -77,7 +77,7 @@
       <div class="col-4">
         <button type=submit class="btn btn-block {{ config('adminlte.classes_auth_btn', 'btn-flat btn-primary') }}">
             <span class="fas fa-sign-in-alt"></span>
-            <a href="http://teste.test/home" style="color: white" >{{ __('Editar') }}</a>
+            <a href="{{ route('home') }}" style="color: white" >{{ __('Editar') }}</a>
         </button>
     </div>
     </div>
